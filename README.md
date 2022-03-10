@@ -69,3 +69,10 @@
 	}
 	console.log(countVowels(BenKIBomaOmayio));
 
+8. Flatten array of arrays using JavaScript reduce
+
+
+	function flattenArr(Arr){
+		return Arr.reduce((result,array)=>result.concat(array));
+	}
+	console.log(flattenArr([[12,123,234,24],[23,34,11,22],[34,34,11,22],[11,33,55,66]]));
