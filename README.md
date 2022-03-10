@@ -93,10 +93,12 @@
 	console.log(checkpalindrome('awanana'));
 	console.log(checkpalindrome('madam'));
 
+10. Write a function to calculate simple interest based on the principle amount
 
-
-
-
+	function simpleinterest(principal,rate,time){
+		return `Simple interest is: ${principal*rate*time}`;
+	}
+	console.log(simpleinterest(12000,0.34,12));
 
 
 
