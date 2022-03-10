@@ -35,3 +35,37 @@
 	console.log(Circle(13));
 
 	NB: Math.PI is equivalent to 22/7
+
+
+6. Write a function to reverse a number
+
+	function reverseNum(num){
+		let originalNum=num;
+		let reversedNum=0;
+		while (num>0){
+			reversedNum=reversedNum*10;
+			remainder=num%10;
+			reversedNum=reversedNum+remainder;
+			num=Math.floor(num/10);
+		}
+		return `The reversed number for ${originalNum} is ${reversedNum}`;
+	}
+	console.log(reverseNum(4567843));
+
+
+7. Count number of Vowels in String
+
+	function countVowels(str){
+		str=str.toLowerCase();
+		let count=0;
+
+		for (let i=0;i<str.length;i++){
+			if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i'
+			||str.charAt(i)=='o' || str.charAt(i)=='u'){
+				count++;
+			}
+		}
+		return 'The entered str has ${count} vowels`;
+	}
+	console.log(countVowels(BenKIBomaOmayio));
+
