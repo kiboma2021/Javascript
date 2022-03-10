@@ -76,3 +76,33 @@
 		return Arr.reduce((result,array)=>result.concat(array));
 	}
 	console.log(flattenArr([[12,123,234,24],[23,34,11,22],[34,34,11,22],[11,33,55,66]]));
+
+
+9. Write a function to check if an input string is a palindrome
+
+	function checkpalindrome(str){
+		for (let i=0;i<str.length;i++){
+			if(str.charAt(i)!=str.charAt(str.length-i-1)){
+				return `The string ${str} is not a palindrome`;
+			}
+		}
+		return `The string ${str} is a palindrome`;
+	}
+
+	console.log(checkpalindrome('anana'));
+	console.log(checkpalindrome('awanana'));
+	console.log(checkpalindrome('madam'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
