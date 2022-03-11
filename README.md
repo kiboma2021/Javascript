@@ -148,8 +148,20 @@
 	console.log(combineUnlimitedArrays([12,11,43],[12,55,67],[45,87,89]));
 
 
+16. Write a function to find the count of a letter in a string
 
-
+	function letterCount(str,c){
+		str=str.toLowerCase();
+		let count=0;
+		for(let i=0;i<str.length;i++){
+			if(str.charAt(i)==c){
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	console.log(letterCount('Hey Ben, Welcome to Javascript Exercises','e'));
 
 
 
