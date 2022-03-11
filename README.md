@@ -140,4 +140,18 @@
 	console.log(AddUnlimitedNums(12,12,24,10));
 
 
+15. Write a function to combine unlimited arrays
+
+	function combineUnlimitedArrays(...args){
+		return args.reduce((total,arrs)=>total.concat(arrs));
+	}
+	console.log(combineUnlimitedArrays([12,11,43],[12,55,67],[45,87,89]));
+
+
+
+
+
+
+
+
 
