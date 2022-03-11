@@ -132,6 +132,12 @@
 	console.log(getFactorial(13));
 
 
+14. Write a function to add unlimited numbers (the sum of all the number passed as arguments of the function)
+
+	function AddUnlimitedNums(...args){
+		return args.reduce((total,nums)=>total+nums);
+	}
+	console.log(AddUnlimitedNums(12,12,24,10));
 
 
 
