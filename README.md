@@ -115,3 +115,23 @@
 		return `Random num between ${start} and ${end} is ${randomnum}`;
 	}
 	console.log(GenerateRandom(2,14));
+
+13. Write a function to find Factorial of a number
+
+
+	function getFactorial(num){
+		if(num==1){
+			return 1;
+		}
+		if(num==0 || num<0){
+			return 0;
+		}
+		return num*getFactorial(num-1);
+	}
+
+	console.log(getFactorial(13));
+
+
+
+
+
