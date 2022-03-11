@@ -164,6 +164,49 @@
 	console.log(letterCount('Hey Ben, Welcome to Javascript Exercises','e'));
 
 
+17. Write a function to check if a number is Prime( return Boolean value based on whether the number is Prime or not )
+
+
+	function checkPrime(num,div=2){
+		if(num<=2){
+			return (num==2)? true:false;
+		}
+		if(div*div>num){
+			return true;
+		}
+		if(num%div==0){
+			return false;
+		}
+		
+		return (checkPrime(num,div+1));
+	}
+
+	console.log(checkPrime(31));
+	console.log(checkPrime(33));
+	console.log(checkPrime(11));
+	console.log(checkPrime(6));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
