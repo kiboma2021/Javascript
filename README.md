@@ -108,6 +108,10 @@
 	}
 	console.log(compoundinterest(12000,0.12,10));
 
+12. Write a function to generate a random number(return a generated random integer number between the provided start and end range).
 
-
-
+	function GenerateRandom(start,end){
+		let randomnum=Math.floor(Math.random()*end)+start;
+		return `Random num between ${start} and ${end} is ${randomnum}`;
+	}
+	console.log(GenerateRandom(2,14));
