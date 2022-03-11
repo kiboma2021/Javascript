@@ -100,10 +100,13 @@
 	}
 	console.log(simpleinterest(12000,0.34,12));
 
+11. Write a function to calculate compound interest based on the principle amount
 
-
-
-
+	function compoundinterest(principal,rate,time){
+		let ci=principal*Math.pow((1+rate),(time));
+		return `Compound interest is: ${ci}`;
+	}
+	console.log(compoundinterest(12000,0.12,10));
 
 
 
