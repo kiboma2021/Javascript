@@ -243,6 +243,21 @@ two-dimensional array.
 	console.log(splitArray([12,3,12,12,45,66,477,88,12,11,24],3));
 
 
+22. We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. 
+The lowest number will not always come first. For example, sumAll([4,1]) should return 10 because sum of all the numbers 
+between 1 and 4 (both inclusive) is 10.
 
 
+	function SumArray(arr){
+		let max=Math.max(arr[0],arr[1]);
+		let min=Math.min(arr[0],arr[1]);
+		let sumall=0;
+		
+		for(let i=min;i<=max;i++){
+			sumall+=i;
+		}
+		return sumall;
+	}
+	console.log(SumArray([12,15]));
 
+23. 
