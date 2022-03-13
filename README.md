@@ -231,10 +231,16 @@ but less than 2 (index 1). Likewise, getIndexToIns([20,3,5], 19) should return 2
 	}
 	console.log(getIndextoInsert([12,11,23,45],13));
 
+21. Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a 
+two-dimensional array.
 
-
-
-
+	function splitArray(arr,size){
+		if(arr.length<=size){
+			return [arr];
+		}
+		return [arr.slice(0,size)].concat(splitArray(arr.slice(size),size));
+	} 
+	console.log(splitArray([12,3,12,12,45,66,477,88,12,11,24],3));
 
 
 
