@@ -1,0 +1,97 @@
+
+1. Print the odd numbers less than 100
+
+	for(let i=1;i<100;i+=2){
+		console.log(i);
+	}
+
+2. Print the multiplication table with 7
+
+	for(let i=0;i<=10;i++){
+	  let result=7*i;
+	  console.log("7X"+i+"="+result);
+	}
+
+3. Print all the multiplication tables with numbers from 1 to 10
+
+	for(let i=1;i<=10;i++){
+	  for(let j=0;j<=10;j++){
+	    console.log(i+"X"+j+"="+i*j);
+	  }
+	}
+
+4. Calculate the sum of numbers from 1 to 10
+
+	let sumall=0;
+	for(let i=1;i<=10;i++){
+	  sumall+=i;
+	}
+	console.log(sumall);
+
+5. Calculate 10!
+
+	let productall=1;
+	for(let i=1;i<=10;i++){
+	  productall*=i;
+	}
+	console.log(productall);
+
+
+6. Calculate the sum of odd numbers greater than 10 and less than 30
+
+	sumodd=0;
+	for(let i=11;i<=30;i+=2){
+	  sumodd+=i;
+	}
+	console.log(sumodd);
+
+7.  Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+	function positiveArr(arr){
+	  let pos_arr=[];
+	  for(let i=0;i<arr.length;i++){
+	    if(arr[i]>=0){
+	      pos_arr.push(arr[i]);
+	    }
+	  }
+	  return pos_arr;
+	}
+	console.log(positiveArr([12,45,11,23,-12,-87,14,-74]));
+
+
+8. Find the maximum number in an array of numbers
+
+	function maxNum(arr){
+	  let max_no=0;
+	  for(let i=0;i<arr.length;i++){
+	    if(arr[i]>max_no){
+	      max_no=arr[i];
+	    }
+	  }
+	  return max_no;
+	}
+	console.log(maxNum([12,-12,23,54,11,-98,78,7,25]));
+
+
+9. Print the first 10 Fibonacci numbers without recursion
+
+	fib_num=[0,1];
+	for(let i=2;i<=10;i++){
+	  fib_num.push(fib_num[i-2]+fib_num[i-1]);
+	}
+	console.log(fib_num);
+
+10. 
+
+
+
+
+
+
+
+
+
+
+
+
+
