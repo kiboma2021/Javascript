@@ -53,6 +53,24 @@
 	console.log(reversed_arr);
 
 
+5. Sort an array from lowest to highest
+
+	arr=[12,21,10,10,47,50]
+
+	small_largest=arr.sort();
+	console.log(small_largest);
+
+	OR//
+
+	arr=[12,21,10,10,47,50]
+
+	small_largest=arr.sort((a,b)=>a-b);
+	console.log(small_largest);
+
+
+
+
+
 
 
 
