@@ -68,7 +68,12 @@
 	console.log(small_largest);
 
 
+6. Remove the spaces found in a string
 
+	let str="I love    coding so    much";
+	let str_trimmed=str.replace(/\s/g,'');
+
+	console.log(str_trimmed)
 
 
 
