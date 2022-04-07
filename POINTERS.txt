@@ -1,0 +1,23 @@
+A ponter is a variable which contains a memory address
+Every time you declare a variable, a computer will reserve a memory for this variable
+
+char -> 1 byte
+int -> 4 bytes
+float -> 4 bytes
+
+To determine the size of those types on your computer, you can use the sizeof operator.
+
+C - Strings
+
+Strings are actually one-dimensional array of characters terminated by a null character '\0'
+
+char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'}; which is equivalent to:
+char greeting[] = "Hello";
+
+    #include <stdio.h>
+    int main()
+    {
+        char greeting[6]={'H','E','L','L','O','\0' };
+        printf("Greetig message: %s\n",greeting);
+        return(0);
+    }
