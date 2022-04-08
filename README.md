@@ -55,19 +55,19 @@
 
 7. Count number of Vowels in String
 
-	function countVowels(str){
-		str=str.toLowerCase();
-		let count=0;
+	function countvowels(str)
+	{
 
-		for (let i=0;i<str.length;i++){
-			if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i'
-			||str.charAt(i)=='o' || str.charAt(i)=='u'){
-				count++;
-			}
-		}
-		return 'The entered str has ${count} vowels`;
+	  str=str.toLowerCase();
+	  count=0;
+	  for(let i=0;i<str.length;i++)
+	  {
+	    if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+	    count++;
+	  }
+	  return `The number of vowels in the string is: ${count}`
 	}
-	console.log(countVowels(BenKIBomaOmayio));
+	console.log(countvowels("Ben Wa Kiboma WA Omayio"))
 
 8. Flatten array of arrays using JavaScript reduce
 
