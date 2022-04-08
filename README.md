@@ -80,18 +80,23 @@
 
 9. Write a function to check if an input string is a palindrome
 
-	function checkpalindrome(str){
-		for (let i=0;i<str.length;i++){
-			if(str.charAt(i)!=str.charAt(str.length-i-1)){
-				return `The string ${str} is not a palindrome`;
-			}
-		}
-		return `The string ${str} is a palindrome`;
+	function checkPalindrome(str)
+	{
+	  str=str.toLowerCase();
+	  for(let i=0;i<str.length;i++)
+	  {
+	    if(str[i]!=str[str.length-i-1])
+	    {
+	      return `The string ${str} is not palindrome`;
+	    }
+
+	  }
+	  return `The string ${str} is a palindrome`;
 	}
 
-	console.log(checkpalindrome('anana'));
-	console.log(checkpalindrome('awanana'));
-	console.log(checkpalindrome('madam'));
+	console.log(checkPalindrome("maDam"));
+	console.log(checkPalindrome("seito"));
+	console.log(checkPalindrome("323"));
 
 10. Write a function to calculate simple interest based on the principle amount
 
