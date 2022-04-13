@@ -1,3 +1,20 @@
+QUICK NOTES
+
+	//Convert to six decimal places
+
+	var myNumber = 2;
+	myNumber.toFixed(2); //returns "2.00"
+	myNumber.toFixed(1); //returns "2.0"
+
+
+	// Sort an array of numbers based on numerical value.
+	let numbers = [23, 65, 88, 12, 45, 99, 2000]
+
+	let sortednumbers = numbers.sort((a, b) => a - b);
+	//=> [12, 23, 45, 65, 88, 99, 2000]
+
+
+
 1. Write a JavaScript function to print the “Hello World” message
 
 	function Greeting(){
